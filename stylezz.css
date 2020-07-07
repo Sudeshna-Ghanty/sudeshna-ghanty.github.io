@@ -201,12 +201,12 @@ body.light {
 }
 
 .stag__image {
-    
+
     width: 30px;
     margin: 0 12px;
-    
-    
-    
+
+
+
 }
 
 .followers {
@@ -282,4 +282,4 @@ body.light {
     .heros {
         grid-template-columns: 1fr;
     }
-}
+} 

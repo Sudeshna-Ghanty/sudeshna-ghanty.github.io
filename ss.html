@@ -11,8 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylezz.css">
   <style>
-    .atbr { font-size: 11px; text-align: center; }
-    .atbr a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
@@ -23,7 +23,7 @@
         <h1 class="hd__title">Social Media Dashboard</h1>
         <span class="hd__subtext">ISA VIT</span>
       </div>
-      <div class="hd__right toggle">
+      <div class="hd__right tg">
         <label for="dark_mode" title="Dark mode toggle" class="tg__label">Mode</label>
         <div class="tg__button-wrapper">
           <input type="checkbox" name="dark_mode" class="tg__checkbox" id="dark_mode">
@@ -252,16 +252,16 @@
     </section>
   </div>
 
-  <div class="atbr">
+  <div class="attribution">
     Created by Sudeshna Ghanty
   </div>
 
   <script>
-    const tgButton = document.getElementById('dark_mode');
+    const toggleButton = document.getElementById('dark_mode');
     const body = document.getElementsByTagName("body")[0];
 
     toggleButton.addEventListener('click', () => {
-      body.classList.tg('light');
+      body.classList.toggle('light');
     });
   </script>
 </body>
